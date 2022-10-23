@@ -27,22 +27,14 @@
               <br>
               <button type="button" onclick="addProducto()"> Agregar producto </button>
               <br>
+
               <h1>----------------------------------</h1>
 
               <label for="buscar"> Buscar producto (codigo):</label><br>
               <br>
-              <input type="text" id="codigo" placeholder="Ingrese el codigo"><br>
+              <input type="text" id="cod" placeholder="Ingrese el codigo"><br>
               <br>
-              <button type="button" onclick="buscarX()"> Buscar producto </button>
-              <br>
-              <table id="busc" border="1";>
-                <tr>
-                    <th>Codigo</th>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Costo</th>
-                </tr>
-              </table>
+              <button type="button" onclick="buscarX()">Buscar producto</button>
               <br>
               <h1>----------------------------------</h1>
 
@@ -51,17 +43,35 @@
               <br>
               <br>
               <button type="button" onclick="eliminarX()"> Eliminar producto </button>
+
               <h1>----------------------------------</h1>
-  
-              <label for="insertar"> Insertar (codigo):</label><br>
+              <br>
+              <label for="posicion"> Insertar posicion:</label><br>
+              <br>
+              <input type="text" id="posicion" placeholder="Ingrese la posicion"><br>
+              <br>
+              <label for="nombre"> Agregar producto (nombre):</label><br>
+              <br>
+              <input type="text" id="nombre" placeholder="Ingrese el nombre"><br>
+              <br>
+              <label for="codigo"> Agregar codigo:</label><br>
               <br>
               <input type="text" id="codigo" placeholder="Ingrese el codigo"><br>
               <br>
+              <label for="cantidad"> Agregar cantidad:</label><br>
+              <br>
+              <input type="text" id="cantidad" placeholder="Ingrese la cantidad"><br>
+              <br>
+              <label for="costo"> Costo:</label><br>
+              <br>
+              <input type="text" id="costo" placeholder="Ingrese el costo"><br>
+              <br>
               <br>
               <button type="button" onclick="insertar()"> Insertar producto </button>
+              <br>
+              
               <h1>----------------------------------</h1>
   
-              
               <button type="button" onclick="listar()"> Inventario</button> 
               <br>
               <table id="productos" border="1";>
@@ -73,7 +83,9 @@
                 </tr>
               </table>
               <h1>----------------------------------</h1>
-              <button type="button" onclick="listarInvert()">Listar Inventario Inverso</button> <br><br>
+
+              <button type="button" onclick="listarInvert()"> Listar Inventario Inverso </button> 
+              <br>
               <table id="prod" border="1";>
                 <tr>
                     <th>Codigo</th>
